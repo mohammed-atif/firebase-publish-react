@@ -18,7 +18,8 @@ async function run() {
         process.env.FIREBASE_TOKEN = core.getInput('firebase-token');
         process.env.INSTALL_FIREBASE = core.getInput('install-firebase');
         process.env.BUILD_APPLICATION = core.getInput('build-application');
-        await exec.exec('bash ./deploy.sh', [], options);
+
+        await exec.exec(`bash ${__dirname}/deploy.sh`, [], options);
 
         // Process the output to get the url
         hostingUrl = hostingUrl.substring(hostingUrl.lastIndexOf('Hosting URL: '))

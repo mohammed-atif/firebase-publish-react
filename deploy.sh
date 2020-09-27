@@ -1,3 +1,5 @@
+#!/bin/bash -e
+
 # Install firebase with npm
 if [ $INSTALL_FIREBASE == "true" ]
 then

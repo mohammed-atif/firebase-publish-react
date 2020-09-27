@@ -3,34 +3,34 @@ Github Action tool to publish your React Application to Firebase
 
 ## Inputs
 ### firebase-token
-**Required** Firebase token obtained for CI tool
-**Default**  ''
+* **Required** Firebase token obtained for CI tool
+* **Default**  ''
 > Warning: Use of tokens and secrets are recommened using [Github Secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets)
 
 ### install-firebase
-If true, then action will use its own firebase cli. If false, reuse firebase cli from previous steps  
-**Default** true
+* If true, then action will use its own firebase cli. If false, reuse firebase cli from previous steps  
+* **Default** true
 
 ### build-application
-If true, build application before deploying. If false, use the build directory from previous steps
-**Default** true
+* If true, build application before deploying. If false, use the build directory from previous steps
+* **Default** true
 
 ## Output
 ### hosting-url
-Firebase Hosting Url of the deployed application
+* Firebase Hosting Url of the deployed application
 
 ## Using the action
 
 ### Directly use the action
 ```yaml
-- uses: mohammed-atif/firebase-publish-react
+- uses: mohammed-atif/firebase-publish-react@v0.0.2
   with:
     firebase-token: ${{ secrets.FIREBASE_TOKEN }}
 ```
 
 ### Use the action with existing build or Firebase installation to save time
 ```yaml
-- uses: mohammed-atif/firebase-publish-react
+- uses: mohammed-atif/firebase-publish-react@v0.0.2
   with:
     firebase-token: ${{ secrets.FIREBASE_TOKEN }}
     install-firebase: false
