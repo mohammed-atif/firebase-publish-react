@@ -1,0 +1,22 @@
+name: 'Firebase Publish React'
+author: 'Mohammed Atif'
+description: 'Github Action tool to publish your React Application to Firebase'
+inputs:
+  firebase-token: 
+    description: Firebase token for CI
+    required: true
+    default: ''
+  use-new-firebase:
+    description: If true, then action will use its own firebase. If fase, reuse firebase from previous steps
+    required: false
+    default: true
+  build-application:
+    description: If true, build application before deploying. If false, use the build directory from previous steps
+    required: false
+    default: true
+outputs:
+  hosting-url: 
+    description: 'Url of Firebase Hosting'
+runs:
+  using: 'node14'
+  main: 'index.js'

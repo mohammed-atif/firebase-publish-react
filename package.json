@@ -1,0 +1,30 @@
+{
+  "name": "firebase-publish-react",
+  "version": "0.0.1",
+  "description": "Github Action tool to publish your React Application to Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammed-atif/firebase-publish-react.git"
+  },
+  "keywords": [
+    "firebase",
+    "react",
+    "deploy",
+    "publish",
+    "firebase-publish-react"
+  ],
+  "author": "Mohammed Atif",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohammed-atif/firebase-publish-react/issues"
+  },
+  "homepage": "https://github.com/mohammed-atif/firebase-publish-react#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.0.4"
+  }
+}
