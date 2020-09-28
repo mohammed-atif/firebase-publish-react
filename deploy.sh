@@ -20,4 +20,4 @@ else
 fi
 
 # Deploy the application to firebase
-firebase deploy --token $FIREBASE_TOKEN
+firebase deploy --only hosting --token $FIREBASE_TOKEN

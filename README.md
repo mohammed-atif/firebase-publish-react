@@ -27,7 +27,7 @@ Github Action tool to publish your React Application to Firebase
 
 ### Use the action with existing build or Firebase installation to save time
 ```yaml
-- uses: mohammed-atif/firebase-publish-react@v0.0.2
+- uses: mohammed-atif/firebase-publish-react@v1.0
   with:
     firebase-token: ${{ secrets.FIREBASE_TOKEN }}
     install-firebase: false
