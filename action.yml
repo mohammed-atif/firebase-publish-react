@@ -2,7 +2,7 @@ name: 'Firebase Publish React'
 author: 'Mohammed Atif'
 description: 'Github Action tool to publish your React Application to Firebase'
 branding:
-  icon: 'play'
+  icon: 'upload-cloud'
   color: 'orange'
 inputs:
   firebase-token: 

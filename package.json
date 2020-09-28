@@ -1,6 +1,6 @@
 {
   "name": "firebase-publish-react",
-  "version": "0.0.2",
+  "version": "1.0",
   "description": "Github Action tool to publish your React Application to Firebase",
   "main": "index.js",
   "scripts": {
